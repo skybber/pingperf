@@ -1,0 +1,3 @@
+FROM hotswapagent/wildfly
+RUN mkdir -p /extra_class_path
+COPY ./target/pingperf.war ${DEPLOYMENT_DIR}
