@@ -3,6 +3,7 @@ package org.hotswap.test.jaxrs.ping.boundary;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -17,7 +18,16 @@ public class PingResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public Response getStatistic() {
+    @Path("simple")
+    public Response getSimple() {
+        statistics.updateStatistic(0);
+        return Response.ok().build();
+    }
+
+    @GET
+    @Path("/pathparam/{param:.+}")
+    @Produces(MediaType.TEXT_PLAIN )
+    public Response getStatistic(@PathParam("param") String ua) {
         statistics.updateStatistic(0);
         return Response.ok().build();
     }
