@@ -13,10 +13,10 @@ on images from [hotswap-docklands](https://github.com/HotswapProjects/hotswap-do
 
 ## Results
 
-|Microprofile|Start time|Docker mem usage|Throughput req/s|
-|------------|----------|----------------|----------------|
-|Meecrowave 1.2.0|1s|170MB|1600/s|
-|Open Liberty 17.04|4s|475MB|1570/s|
-|Payara Micro 5.181|16s|308MB|200-400/s|
-|Tomee 7.0.4|2s|450MB|1550/s|
-|Wildfly 11.0|4s|510MB|1580/s|
+|Microprofile|Start time|Docker mem usage|Throughput req/s|JAVA_OPTS|
+|------------|----------|----------------|----------------|---------|
+|Meecrowave 1.2.0|1s|170MB|1600/s|-Xmx128m|
+|Open Liberty 17.04|4s|475MB|1570/s||
+|Payara Micro 5.181|16s|308MB|200-400/s|-Xmx64m|
+|Tomee 7.0.4|2s|450MB|1550/s||
+|Wildfly 11.0|4s|510MB|1580/s||
