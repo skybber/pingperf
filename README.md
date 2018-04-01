@@ -1,4 +1,4 @@
-### Performance tests of java [MicroProfiles](https://microprofile.io/)
+# Performance tests of java [MicroProfiles](https://microprofile.io/)
 
 ## Motivation
 
