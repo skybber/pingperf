@@ -1,5 +1,0 @@
-FROM hotswapagent/kumuluzee-micro
-RUN mkdir -p /extra_class_path
-COPY ./target/pingperf.war ${DEPLOYMENT_DIR}
-ENV ARCHIVE_NAME pingperf.war
-ENV CONTEXT pingperf
