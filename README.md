@@ -37,4 +37,4 @@ Motivation of this test is to check ability to run MicroProfile application on R
 
 |Microprofile|Start time|Mem usage|Throughput req/s|JAVA_OPTS|
 |------------|----------|----------------|----------------|---------|
-|Meecrowave 1.2.0|9s|170MB|250/s||
+|Meecrowave 1.2.0|9s||250/s||
