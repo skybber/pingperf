@@ -30,3 +30,11 @@ on images from [hotswap-docklands](https://github.com/HotswapProjects/hotswap-do
 |Payara Micro 5.181|16s|308MB|200-400/s|-Xmx64m|
 |Tomee 7.0.4|2s|450MB|1550/s||
 |Wildfly 11.0|4s|510MB|1580/s||
+
+## RaspberryPI
+
+Motivation of this test is to check ability to run MicroProfile application on RaspberyPi3.
+
+|Microprofile|Start time|Mem usage|Throughput req/s|JAVA_OPTS|
+|------------|----------|----------------|----------------|---------|
+|Meecrowave 1.2.0|9s|170MB|250/s||
