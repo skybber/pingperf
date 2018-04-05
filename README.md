@@ -25,9 +25,10 @@ on images from [hotswap-docklands](https://github.com/HotswapProjects/hotswap-do
 
 |Microprofile|Start time|Docker mem usage|Throughput req/s|JAVA_OPTS|
 |------------|----------|----------------|----------------|---------|
-|Meecrowave 1.2.0|1s|170MB|1600/s|-Xmx128m|
+|Meecrowave 1.2.0|1s|160MB|1580/s|-Xmx64m|
 |Open Liberty 17.04|4s|475MB|1570/s||
 |Payara Micro 5.181|16s|308MB|200-400/s|-Xmx64m|
+|Wildfly Swarm 2018.3.3|5s|335MB|1590/s|-Xmx64m|
 |Tomee 7.0.4|2s|450MB|1550/s||
 |Wildfly 11.0|4s|510MB|1580/s||
 
