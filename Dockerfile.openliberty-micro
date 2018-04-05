@@ -1,4 +1,3 @@
 FROM hotswapagent/openliberty-microprofile
-RUN mkdir -p /extra_class_path
 ENV DEPLOYMENT_DIR /config/dropins/
 COPY ./target/pingperf.war ${DEPLOYMENT_DIR}

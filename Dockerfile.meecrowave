@@ -1,6 +1,5 @@
 FROM hotswapagent/meecrowave
-RUN mkdir -p /extra_class_path
 COPY ./target/pingperf.war ${DEPLOYMENT_DIR}
 ENV ARCHIVE_NAME pingperf.war
 ENV CONTEXT pingperf
-ENV JAVA_OPTS="-Dorg.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true -Xmx128m"
+ENV JAVA_OPTS="-Dorg.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true -Xmx64m"
