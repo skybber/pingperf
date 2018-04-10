@@ -1,5 +1,6 @@
 package org.hotswap.test.jaxrs.ping.boundary;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -11,6 +12,7 @@ import javax.ws.rs.core.Response;
 import org.hotswap.test.jaxrs.ping.control.Statistics;
 
 @Path("ping")
+@ApplicationScoped
 public class PingResource {
 
     @Inject
