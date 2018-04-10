@@ -33,7 +33,7 @@ Following performance statistics were measured by JMeter.
 |------------|----------|----------------|----------------|---------|
 |Meecrowave 1.2.1|0.9s|150MB|3750/s|-Xmx64m|
 |Open Liberty 17.04|4s|500MB|3400/s||
-|Payara Micro 5.181|7s|400MB|3400/s|-Xmx128m|
+|Payara Micro 5.181|5s|312MB|3200/s|-Xmx128m --nocluster|
 |Wildfly Swarm 2018.3.3|5s|316MB|3200/s|-Xmx64m|
 |Tomee 7.0.4|2s|MB|/s||
 |Wildfly 11.0|4s|MB|/s||
@@ -45,7 +45,7 @@ Following performance statistics were measured by JMeter.
 |------------|----------|----------------|----------------|---------|
 |Meecrowave 1.2.1|0.9s|180MB|24200/s|-Xmx64m|
 |Open Liberty 17.04|4s|650MB|34500/s||
-|Payara Micro 5.181|7s|340MB|24800/s|-Xmx128m|
+|Payara Micro 5.181|5s|340MB|25000/s|-Xmx128m --nocluster|
 |Wildfly Swarm 2018.3.3|5s|340MB|21000/s|-Xmx64m|
 |Tomee 7.0.4|2s|MB|/s||
 |Wildfly 11.0|4s|MB|/s||
