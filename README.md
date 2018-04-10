@@ -37,7 +37,7 @@ Following performance statistics were measured by JMeter.
 |Wildfly Swarm 2018.3.3|5s|316MB|3200/s|-Xmx64m|
 |Tomee 7.0.4|2s|MB|/s||
 |Wildfly 11.0|4s|MB|/s||
-|Spring-Boot 2.0.1|1.9s|630MB|4200/s|-Xmx64m|
+|Spring-Boot 2.0.1|1.9s|196MB|3900/s|-Xmx64m|
 
 ### 10 threads (users)
 
@@ -49,7 +49,7 @@ Following performance statistics were measured by JMeter.
 |Wildfly Swarm 2018.3.3|5s|340MB|21000/s|-Xmx64m|
 |Tomee 7.0.4|2s|MB|/s||
 |Wildfly 11.0|4s|MB|/s||
-|Spring-Boot 2.0.1|1.9s|1.4GiB|26500/s|-Xmx64m|
+|Spring-Boot 2.0.1|1.9s|235MB|25000/s|-Xmx64m|
 
 ## RaspberryPI
 
