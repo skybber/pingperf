@@ -27,29 +27,35 @@ is available at [Pingperf-spring-boot](https://github.com/skybber/pingperf-sprin
 
 Following performance statistics were measured by JMeter.
 
-### Single thread (user)
+### Single thread (user) / Xmx128m
 
 |Microprofile|Start time|Docker mem usage|Throughput req/s|JAVA_OPTS|
 |------------|----------|----------------|----------------|---------|
-|Meecrowave 1.2.1|0.9s|150MB|3750/s|-Xmx64m|
-|Open Liberty 17.04|4s|500MB|3400/s||
-|Payara Micro 5.181|5s|312MB|3200/s|-Xmx128m --nocluster|
-|Wildfly Swarm 2018.3.3|5s|316MB|3200/s|-Xmx64m|
-|Tomee 7.0.4|2s|MB|/s||
-|Wildfly 11.0|4s|MB|/s||
-|Spring-Boot 2.0.1|1.9s|196MB|3900/s|-Xmx64m|
+|Meecrowave 1.2.1|0.9s|163MB|3850/s|-Xmx128m|
+|Open Liberty 17.04|4s|259MB|3260/s|-Xmx128m|
+|Payara Micro 5.181|5s|312MB|3433/s|-Xmx128m --nocluster|
+|Wildfly Swarm 2018.3.3|5s|347MB|3158/s|-Xmx128m|
+|Spring-Boot 2.0.1|1.9s|257MB|4113/s|-Xmx128m|
 
-### 10 threads (users)
+### 10 threads (users) / Xmx256m
 
 |Microprofile|Start time|Docker mem usage|Throughput req/s|JAVA_OPTS|
 |------------|----------|----------------|----------------|---------|
-|Meecrowave 1.2.1|0.9s|180MB|24200/s|-Xmx64m|
-|Open Liberty 17.04|4s|650MB|34500/s||
-|Payara Micro 5.181|5s|340MB|25000/s|-Xmx128m --nocluster|
-|Wildfly Swarm 2018.3.3|5s|340MB|21000/s|-Xmx64m|
-|Tomee 7.0.4|2s|MB|/s||
-|Wildfly 11.0|4s|MB|/s||
-|Spring-Boot 2.0.1|1.9s|235MB|25000/s|-Xmx64m|
+|Meecrowave 1.2.1|0.9s|207MB|25446/s|-Xmx256m|
+|Open Liberty 17.04|4s|290MB|33240/s|-Xmx256m|
+|Payara Micro 5.181|5s|352MB|25798/s|-Xmx256m --nocluster|
+|Wildfly Swarm 2018.3.3|5s|390MB|22897/s|-Xmx256m|
+|Spring-Boot 2.0.1|1.9s|276MB|26559/s|-Xmx256m|
+
+### 50 threads (users) / Xmx 256
+
+|Microprofile|Start time|Docker mem usage|Throughput req/s|JAVA_OPTS|
+|------------|----------|----------------|----------------|---------|
+|Meecrowave 1.2.1|0.9s|237MB|33472/s|-Xmx256m|
+|Open Liberty 17.04|4s|290MB|44194/s|-Xmx256m|
+|Payara Micro 5.181|5s|386MB|36042/s|-Xmx256m --nocluster|
+|Wildfly Swarm 2018.3.3|5s|413MB|40889/s|-Xmx256m|
+|Spring-Boot 2.0.1|1.9s|276MB|34814/s|-Xmx256m|
 
 ## RaspberryPI
 

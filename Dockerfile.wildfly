@@ -1,2 +1,0 @@
-FROM hotswapagent/wildfly
-COPY ./target/pingperf.war ${DEPLOYMENT_DIR}
